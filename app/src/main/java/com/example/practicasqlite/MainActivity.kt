@@ -33,7 +33,6 @@ class MainActivity : Activity() {
     }
 
     private fun readAndLogAllData() {
-        // ... (Tu función readAndLogAllData() permanece igual) ...
         val cursor = crud.readData()
 
         cursor?.let {

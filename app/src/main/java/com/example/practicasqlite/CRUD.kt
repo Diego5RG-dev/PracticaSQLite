@@ -8,7 +8,7 @@ class CRUD(private val dbHelper: DatabaseHelper) {
 
     private val TAG = "CRUD_Operations"
 
-    // --- 1. INSERTAR (Create) ---
+    //insertar
     fun insertData(name: String, value: Double): Boolean {
         // Obtenemos la base de datos escribible
         val db = dbHelper.writableDatabase
@@ -28,7 +28,7 @@ class CRUD(private val dbHelper: DatabaseHelper) {
         return success != -1L
     }
 
-    // --- 2. SELECCIONAR/LEER (Read) ---
+    //leer
     fun readData(): Cursor? {
         val db = dbHelper.readableDatabase
 
@@ -40,7 +40,7 @@ class CRUD(private val dbHelper: DatabaseHelper) {
         return cursor
     }
 
-    // --- 3. ACTUALIZAR (Update) ---
+//Actualizar
     fun updateData(id: Int, newName: String, newValue: Double): Int {
         // Obtenemos la base de datos escribible
         val db = dbHelper.writableDatabase
@@ -67,7 +67,7 @@ class CRUD(private val dbHelper: DatabaseHelper) {
         return rowsAffected
     }
 
-    // --- 4. ELIMINAR (Delete) ---
+    //Borrar
     fun deleteData(id: Int): Int {
         val db = dbHelper.writableDatabase
 
