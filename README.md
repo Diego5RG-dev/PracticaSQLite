@@ -10,3 +10,7 @@ En esta practica vamos a probar a hacer una aplicacion simple utilizando DBhelpe
 Clase DatabaseHelper
 ---
 
+
+---
+![alt text](https://github.com/Diego5RG-dev/PracticaSQLite/blob/main/recursosSqlite/FatabaseHelper.png)
+---
